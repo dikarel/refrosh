@@ -1,5 +1,6 @@
 {
   "name": "refrosh",
+  "version": "0.0.0",
   "bin": {
     "refrosh": "./index.js"
   },
