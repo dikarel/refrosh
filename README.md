@@ -9,6 +9,12 @@ Simple auto-reload for JS projects
 - Easy to use
 - KISS design
 
+## Install
+
+```
+npm install -g refrosh
+```
+
 ## How to use
 
 ```
