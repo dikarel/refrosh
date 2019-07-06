@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const process = require("process");
 const childProcess = require("child_process");
 const express = require("express");
@@ -10,7 +12,7 @@ const jsFilePath = process.argv[2];
 
 // Detect erroneous user input
 if (!jsFilePath) {
-  console.error("Usage: freshit <path to js file>");
+  console.error("Usage: refrosh <path to js file>");
   process.exit(1);
 } else if (!fs.existsSync(jsFilePath)) {
   console.error(jsFilePath + " does not exist");

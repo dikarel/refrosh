@@ -1,5 +1,8 @@
 {
-  "name": "freshit",
+  "name": "refrosh",
+  "bin": {
+    "refrosh": "./index.js"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "socket.io": "^2.2.0"
