@@ -50,7 +50,7 @@ app
   .get("/file.js", (request, response) => {
     response
       .type("application/javascript")
-      .sendFile(path.resolve(__dirname, jsFilePath));
+      .sendFile(jsFilePath);
   });
 
 // Start webserver
