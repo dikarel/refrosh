@@ -47,10 +47,9 @@ io.on("connection", socket => {
 // Show the user a placeholder website that auto-reloads the target JS file
 app
   .use(express.static(path.resolve(__dirname, "public")))
-  .get("/file.js", (request, response) => {
-    response
-      .type("application/javascript")
-      .sendFile(jsFilePath);
+  .get("/file.js", (_, response) => {
+    response.type("application/javascript")
+    fs.createReadStream(jsFilePath).pipe(response);
   });
 
 // Start webserver
